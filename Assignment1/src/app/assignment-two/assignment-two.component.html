@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <input 
+        class="form-control"
+        type="text" 
+        [(ngModel)]="username">
+      <p>
+        {{username}}
+      </p>
+      <button
+        class="btn btn-primary"
+        [disabled]="!username" 
+        (click)="onResetUsername()"
+        >Click Me!</button>
+    </div>
+  </div>
+</div>
