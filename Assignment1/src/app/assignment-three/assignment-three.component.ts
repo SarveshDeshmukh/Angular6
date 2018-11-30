@@ -16,7 +16,7 @@ export class AssignmentThreeComponent implements OnInit {
 
   onToggleDetails() {
     this.showDetails = !this.showDetails;
-    this.logs.push('hey');
+    this.logs.push(new Date().toLocaleTimeString());
   }
 
   getBackground() {
